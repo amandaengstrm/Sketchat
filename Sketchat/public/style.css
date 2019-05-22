@@ -1,0 +1,263 @@
+html {
+    height: 100%;
+}
+  
+body {
+    margin: 0px;
+    height: 100%; 
+    background: rgb(207, 252, 250);
+    background: -moz-linear-gradient(-45deg,  #6EBCF0 10%, rgb(110, 211, 224) 45%, rgb(58, 100, 214) 100%);
+    background: -webkit-linear-gradient(-45deg,  #6EBCF0 10%, rgb(110, 211, 224) 45%, rgb(58, 100, 214) 100%);
+    background: -o-linear-gradient(-45deg,   #6EBCF0 10%, rgb(110, 211, 224) 45%, rgb(58, 100, 214) 100%);
+    background: -ms-linear-gradient(-45deg,  #6EBCF0 10%, rgb(110, 211, 224) 45%, rgb(58, 100, 214) 100%);
+    background: linear-gradient(135deg,   #6EBCF0 10%, rgb(110, 211, 224) 45%, rgb(58, 100, 214) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6EBCF0', endColorstr='#1D0952',GradientType=1 );
+}
+
+section#chatroom {      
+    height: 100%;
+    width: 265px;
+    overflow: auto;
+    overscroll-behavior-y: contain;
+    position: fixed;
+}
+
+#gamepage {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+}
+
+  
+#wordtodraw{      
+    color: white;
+    font-size: 24px; 
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-decoration: none; 
+    font: 14px/1.5"Open Sans", sans-serif;
+    font-weight: bolder; 
+}
+
+  #sketch-holder {
+    margin: 0;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  section#input_zone {
+      height: 7%;
+      width: 65%; 
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%)
+  }
+  
+  .vertical-align {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  }
+  
+  input#message {
+      display: inline-block;
+      width: 88%;
+      height: 70%;
+      font-family: 'Open sans', sans-serif;
+      font-size: 2vh;
+  }
+  
+  button#send_message {
+      display: inline-block; 
+      height: 70%;
+      width: 10%;
+  }
+
+  .recivedemessage{ 
+    /* background-color:white; */
+    /* color: white; */
+    width: 100%; 
+    margin: 0px;
+    height: 40px;
+    font-size: 2vh;
+    font-family: 'Open sans', sans-serif;
+    padding: 1vh;
+  }
+  
+  /* p.message {
+      margin: 0px;
+      width: 100%;
+      height: 40px;
+      font-size: 2vh;
+      font-family: 'Open sans', sans-serif;
+      padding: 1vh;
+      
+  } */
+
+  #startpage{
+    background-color: rgb(207, 252, 250);
+    height: 100%;
+    width: auto;
+    overflow-y: hidden; 
+  }
+
+  #startpage img{
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #startpage #mybutton{
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.4s;
+    background-color: #232A36;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 2px solid #232A36;
+    border-radius: 8px;
+  }
+
+  #startpage #mybutton:hover {
+    color: rgb(207, 252, 250);
+  }
+
+  .characterpage {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font: 14px/1.5 "Open Sans", sans-serif;
+  }
+
+#characterInfo {    
+    font-size: 40px; 
+    padding: 10px; 
+    margin: 20px; 
+    color: white;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.the-cards{
+    height: 100wh;
+    width: 100vw; 
+    padding: 50px; 
+    margin: 20%, 20%; 
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+.profile-card {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 330px;
+  height: 326px;
+  text-align: center;
+  color: #FFF;
+}
+
+header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 22px;
+  padding-top: 50px; 
+  background-color: #232A36;
+}
+
+header > h1 {
+  font-size: 28px;
+}
+
+header > h2 {
+  font-size: 14px;
+  color: #5D6F8F;
+  text-transform: uppercase;
+}
+
+header > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.profile-bio {
+  padding: 0px 22px 22px;
+  background-color: #232A36;
+  border-bottom-left-radius: 8px; 
+  border-bottom-right-radius: 8px; 
+}
+
+.characterpage #startbutton{
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.4s;
+    background-color: #232A36;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 2px solid #232A36;
+    position: fixed;
+    bottom: 20%;
+    right: 42.5%;
+    border-radius: 8px;
+  }
+
+  .characterpage #startbutton:hover{
+      color: #6EBCF0;
+  }
+
+  #gamepage #clearbutton{
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.4s;
+    background-color: rgb(51,51,51);
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 2px solid rgb(51,51,51);
+    position: absolute;
+    bottom: 20%;
+    right: 42.5%;
+    border-radius: 8px;
+  }

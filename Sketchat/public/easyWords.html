@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>lab3</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+
+	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<script src="chatt.js"></script>
+
+	<script>
+		var socket = io.connect(window.location.origin);
+		socket.on('message', function (data) {
+			console.log(data.msg);
+		});
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+
+</head>
+
+<body>
+
+	<div id="sketch-holder"></div>
+
+	<!-- <section>
+	<div id="change_username">
+<input id="username" type="text" />
+<button id="send_username" type="button">Change username</button>
+	</div>
+</section> -->
+
+	<section id="chatroom">
+		<section id="feedback"></section>
+	</section>
+
+	<section id="input_zone">
+		<input id="message" class="vertical-align" type="text" />
+		<button id="send_message" class="vertical-align" type="button">Send</button>
+	</section>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Sketchat</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+
+	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script language="javascript" type="text/javascript" src="path/to/p5.dom.js"></script>
+
+
+	<script type="text/javascript" src="sketch.js"></script>
+	<script type="text/javascript" src="chatt.js"></script>
+	<script type="text/javascript" src="gamescript.js"></script>
+</head>
+
+<body>
+	<div id="startpage">
+		<img src="Sketchchatlogo.png" alt="Sketcchatlogo" height="90%" width="auto">
+		<input type="button" id="mybutton" value="Join the game">
+
+	</div>
+
+	<div class="characterpage">
+		<div id="characterInfo"></div>
+		<div class="the-cards">
+			<div class="profile-card">
+				<header>
+					<!-- here’s the avatar -->
+					<img src="Sketchcat.png" alt="Sketchcat" height="100px" width="auto">
+					<!-- the username -->
+					<h1>SketchCat</h1>
+					<!-- and role or location -->
+					<h2>Begins as the artist</h2>
+				</header>
+
+				<!-- bit of a bio; who are you? -->
+				<div class="profile-bio">
+					<p>Skechcat is the offical mascot of Sketchat and has big
+						fluffy ears, an eye for detail and is really compedetive</p>
+				</div>
+			</div>
+
+			<div class="profile-card">
+				<header>
+					<!-- here’s the avatar -->
+					<img src="DrawDuck.png" alt="DrawDuck" height="100px" width="auto">
+					<!-- the username -->
+					<h1>DrawDuck</h1>
+					<!-- and role or location -->
+					<h2>Begins as a guesser</h2>
+				</header>
+				<!-- bit of a bio; who are you? -->
+				<div class="profile-bio">
+					<p>DrawDuck is the ugly duckling of the bunch has a big head, with even bigger beak but small wings,
+						the T-rex of birds </p>
+				</div>
+			</div>
+
+			<div class="profile-card">
+				<header>
+					<!-- here’s the avatar -->
+					<img src="PaintPig.png" alt="PaintPig" height="100px" width="auto">
+					<!-- the username -->
+					<h1>PaintPig</h1>
+					<!-- and role or location -->
+					<h2>Begins as a guesser </h2>
+				</header>
+				<!-- bit of a bio; who are you? -->
+				<div class="profile-bio">
+					<p>PaintPig looks like a pigglet even if he is in his teens, a real babyface, loves to be
+						mischievous and do pranks</p>
+				</div>
+			</div>
+			<div class="profile-card">
+				<header>
+					<!-- here’s the avatar -->
+					<img src="BrushBear.png" alt="BrushBear" height="100px" width="auto">
+					<!-- the username -->
+					<h1>BrushBear</h1>
+					<!-- and role or location -->
+					<h2>Begins as a guesser</h2>
+				</header>
+				<!-- bit of a bio; who are you? -->
+				<div class="profile-bio">
+					<p>BrushBear, the name says it all she is all about that brushes and getting down and dirty with the
+						paint buckets.</p>
+				</div>
+			</div>
+		</div>
+
+		<br><input type="button" id="startbutton" value="Start playing">
+
+	</div>
+
+
+	<div>
+
+		<div id="gamepage">
+
+			<div id="sketch-holder"></div>
+			<!-- <button id="erase" type="button">Erase Sketch</button> vi gör inget med denna ännu... -->
+
+			<div id="wordtodraw"></div>
+
+			<input type="button" id="clearbutton" value="Clear Canvas">
+
+			<section id="chatroom">
+				 <section id="feedback"></section>
+			</section>
+
+			<section id="input_zone">
+				<input id="message" class="vertical-align" type="text" />
+			</section>
+
+		</div>
+
+</body>
+
+</html>
